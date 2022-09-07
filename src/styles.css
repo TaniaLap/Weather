@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap");
+
+.video-item {
+  object-fit: cover;
+}
+.content {
+  max-width: 900px;
+  min-width: 280px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contentundersearch {
+  font-family: "Slabo 27px", serif;
+}
+.maininfo {
+  font-size: 50px;
+}
+#city {
+  font-size: 40px;
+  height: 60px;
+}
+#nowday {
+  font-size: 20px;
+}
+.day {
+  opacity: 75%;
+}
+#celsius-link {
+  text-decoration: none;
+}
+#fahrenheit-link {
+  text-decoration: none;
+}
+.input-search {
+  /* max-width: 240px; */
+}
+.button-search {
+  width: 120px;
+}
+#nowday {
+  height: 30px;
+}
+.units {
+  position: relative;
+  font-size: 30px;
+  top: -33px;
+}
+.temperature {
+  font-size: 100px;
+  margin-top: 0px;
+  line-height: 80px;
+}
+.source {
+  text-align: right;
+  max-width: 900px;
+  min-width: 280px;
+  margin: 0 auto;
+}
+li {
+  list-style-type: none;
+  height: 40px;
+}
+.temp,
+.wind,
+.hum {
+  height: 35px;
+  opacity: 75%;
+}
+.card img {
+  height: 70px;
+  width: auto;
+}
+.warm {
+  width: 200px;
+}
+#min {
+  margin-bottom: 0;
+  color: blue;
+}
+#max {
+  color: red;
+}
+.img-btn {
+  background-image: url(../images/loc.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left, center;
+  cursor: pointer;
+  padding-left: 36px;
+}
