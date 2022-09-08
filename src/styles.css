@@ -25,6 +25,14 @@
 .day {
   opacity: 75%;
 }
+.units .active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+.units .active:hover {
+  text-decoration: none;
+}
 #celsius-link {
   text-decoration: none;
 }
