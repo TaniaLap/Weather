@@ -96,3 +96,6 @@ li {
   cursor: pointer;
   padding-left: 36px;
 }
+.weather-forecast-temperature-min {
+  opacity: 0.7;
+}
