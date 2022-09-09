@@ -46,9 +46,55 @@ function showTemperature(response) {
     response.data.main.temp_max
   )}°C`;
 
+  let iconElementAPI = response.data.weather[0].icon;
+
+  if (iconElementAPI === "01d") {
+    document.querySelector("#icon").setAttribute("src", `./images/sun.png`);
+  } else if (iconElementAPI === "02d") {
+    document.querySelector("#icon").setAttribute("src", `./images/warm.png`);
+  } else if (iconElementAPI === "03d") {
+    document.querySelector("#icon").setAttribute("src", `./images/clouds.png`);
+  } else if (iconElementAPI === "04d") {
+    document.querySelector("#icon").setAttribute("src", `./images/clouds.png`);
+  } else if (iconElementAPI === "09d") {
+    document.querySelector("#icon").setAttribute("src", `./images/rain.png`);
+  } else if (iconElementAPI === "10d") {
+    document.querySelector("#icon").setAttribute("src", `./images/rain.png`);
+  } else if (iconElementAPI === "11d") {
+    document.querySelector("#icon").setAttribute("src", `./images/storm.png`);
+  } else if (iconElementAPI === "13d") {
+    document.querySelector("#icon").setAttribute("src", `./images/snow.png`);
+  } else if (iconElementAPI === "50d") {
+    document.querySelector("#icon").setAttribute("src", `./images/mist.png`);
+  } else if (iconElementAPI === "01n") {
+    document.querySelector("#icon").setAttribute("src", `./images/moon.png`);
+  } else if (iconElementAPI === "02n") {
+    document
+      .querySelector("#icon")
+      .setAttribute("src", `./images/moonclouds.png`);
+  } else if (iconElementAPI === "03n") {
+    document.querySelector("#icon").setAttribute("src", `./images/clouds.png`);
+  } else if (iconElementAPI === "04n") {
+    document.querySelector("#icon").setAttribute("src", `./images/clouds.png`);
+  } else if (iconElementAPI === "09n") {
+    document.querySelector("#icon").setAttribute("src", `./images/rain.png`);
+  } else if (iconElementAPI === "10n") {
+    document.querySelector("#icon").setAttribute("src", `./images/rain.png`);
+  } else if (iconElementAPI === "11n") {
+    document.querySelector("#icon").setAttribute("src", `./images/storm.png`);
+  } else if (iconElementAPI === "13n") {
+    document.querySelector("#icon").setAttribute("src", `./images/snow.png`);
+  } else if (iconElementAPI === "50n") {
+    document.querySelector("#icon").setAttribute("src", `./images/mist.png`);
+  }
+
+  document
+    .querySelector("#icon")
+    .setAttribute("alt", response.data.weather[0].description);
+  getForecast(response.data.coord);
+
   celsiusTemperature = response.data.main.temp;
 }
-
 function handleSubmit(event) {
   event.preventDefault();
   let city = document.querySelector("#search-text-input").value;
@@ -107,21 +153,3 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 citySearch("Dresden");
-
-// function showTemper(event) {
-//   event.preventDefault();
-//   let temper = document.querySelector("#temperature");
-//   temper.innerHTML = 80;
-// }
-
-// let linkTemp = document.querySelector("#fahrenheit-link");
-// linkTemp.addEventListener("click", showTemper);
-
-// function showCelsius(event) {
-//   event.preventDefault();
-//   let temper = document.querySelector("#temperature");
-//   temper.innerHTML = 27;
-// }
-
-// let linkCels = document.querySelector("#celsius-link");
-// linkCels.addEventListener("click", showCelsius);
