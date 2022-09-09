@@ -91,7 +91,6 @@ function showTemperature(response) {
   document
     .querySelector("#icon")
     .setAttribute("alt", response.data.weather[0].description);
-  getForecast(response.data.coord);
 
   celsiusTemperature = response.data.main.temp;
 }
