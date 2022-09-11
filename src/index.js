@@ -81,19 +81,19 @@ function displayForecast(response) {
   let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
 
-  let forecastHTML = `<div class="row row-cols-2 row-cols-lg-6 p-4 pt-0 m-0 g-2">`;
+  let forecastHTML = `<div class="row row-cols-2 row-cols-lg-6 p-4 pt-0 m-0 g-1 g-sm-3">`;
   forecast.forEach(function (forecastDay, index) {
     if (index < 6) {
       forecastHTML =
         forecastHTML +
         `
-<div class="col-2 ">
+<div class="col-2">
     <div class="card text-center h-100">
           <img src="${displayImage(forecastDay.weather[0].icon)}"
             alt=""
              class="mx-auto d-block mt-4"
              id="icon"/>
-      <div class="card-body pt-1">
+      <div class="card-body pt-1 p-1 p-sm-2">
         <h5 class="card-title m-0">
           <span class="weather-forecast-temperature-max">${Math.round(
             forecastDay.temp.max
