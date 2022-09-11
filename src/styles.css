@@ -4,8 +4,8 @@
   object-fit: cover;
 }
 .content {
-  max-width: 900px;
-  min-width: 280px;
+  max-width: 702px;
+  min-width: 316px;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -14,6 +14,16 @@
 }
 .maininfo {
   font-size: 50px;
+}
+.warm {
+  padding-top: 40px;
+  padding-left: 10px;
+}
+#iconsleft {
+  padding-top: 70px;
+}
+.inforight {
+  padding-left: 50px;
 }
 #city {
   font-size: 40px;
@@ -58,8 +68,8 @@
 }
 .source {
   text-align: right;
-  max-width: 900px;
-  min-width: 280px;
+  max-width: 702px;
+  min-width: 316px;
   margin: 0 auto;
 }
 li {
