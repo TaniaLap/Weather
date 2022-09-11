@@ -94,7 +94,7 @@ function displayForecast(response) {
              class="mx-auto d-block mt-4"
              id="icon"/>
       <div class="card-body pt-1 p-1 p-sm-2">
-        <h5 class="card-title m-0">
+        <h5 class="card-title card-temp m-0>
           <span class="weather-forecast-temperature-max">${Math.round(
             forecastDay.temp.max
           )}°</span>

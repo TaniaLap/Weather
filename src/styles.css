@@ -110,3 +110,10 @@ li {
 .row {
   margin: 0%;
 }
+
+@media screen and (max-width: 540px) {
+  .card-temp {
+    /* font-size: 16px; */
+    font-size: 1rem;
+  }
+}
