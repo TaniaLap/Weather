@@ -39,14 +39,13 @@
 #fahrenheit-link {
   text-decoration: none;
 }
-.input-search {
-  /* max-width: 240px; */
-}
+
 .button-search {
   width: 120px;
 }
 #nowday {
   height: 30px;
+  padding-bottom: 45px;
 }
 .units {
   position: relative;
@@ -98,4 +97,7 @@ li {
 }
 .weather-forecast-temperature-min {
   opacity: 0.7;
+}
+.row {
+  margin: 0%;
 }

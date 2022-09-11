@@ -29,7 +29,7 @@
     <div class="position-absolute d-flex align-items-center w-100 min-vh-100">
       <div class="container-md p-2">
         <div class="content opacity-75 rounded border mx-auto bg-light">
-          <div class="search p-4">
+          <div class="search p-4 pb-0">
             <form id="search-form" class="d-flex">
               <input
                 class="form-control input-search"
@@ -128,110 +128,7 @@
               </div>
             </div>
 
-            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 p-4 m-0 g-2">
-              <div class="col">
-                <div class="card text-center h-100">
-                  <img
-                    src="./images/mist.png"
-                    alt="Weather icon"
-                    class="mx-auto d-block mt-4"
-                    id="icon"
-                  />
-                  <div class="card-body pt-1">
-                    <h5 class="card-title m-0">
-                      33°
-                      <span class="weather-forecast-temperature-min"> 28°</span>
-                    </h5>
-                    <p class="card-text">MON</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card text-center h-100">
-                  <img
-                    src="./images/warm.png"
-                    alt="Weather icon"
-                    class="mx-auto d-block mt-4"
-                    id="icon"
-                  />
-                  <div class="card-body pt-1">
-                    <h5 class="card-title m-0">
-                      28°
-                      <span class="weather-forecast-temperature-min"> 25°</span>
-                    </h5>
-                    <p class="card-text">TUE</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card text-center h-100">
-                  <img
-                    src="./images/rain.png"
-                    alt="Weather icon"
-                    class="mx-auto d-block mt-4"
-                    id="icon"
-                  />
-                  <div class="card-body pt-1">
-                    <h5 class="card-title m-0">
-                      23°
-                      <span class="weather-forecast-temperature-min"> 18°</span>
-                    </h5>
-                    <p class="card-text">WED</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card text-center h-100">
-                  <img
-                    src="./images/storm.png"
-                    alt="Weather icon"
-                    class="mx-auto d-block mt-4"
-                    id="icon"
-                  />
-                  <div class="card-body pt-1">
-                    <h5 class="card-title m-0">
-                      17°
-                      <span class="weather-forecast-temperature-min"> 15°</span>
-                    </h5>
-                    <p class="card-text">THU</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card text-center h-100">
-                  <img
-                    src="./images/clouds.png"
-                    alt="Weather icon"
-                    class="mx-auto d-block mt-4"
-                    id="icon"
-                  />
-                  <div class="card-body pt-1">
-                    <h5 class="card-title m-0">
-                      13°
-                      <span class="weather-forecast-temperature-min"> 7°</span>
-                    </h5>
-                    <p class="card-text">FRI</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card text-center h-100">
-                  <img
-                    src="./images/snow.png"
-                    alt="Weather icon"
-                    class="mx-auto d-block mt-4"
-                    id="icon"
-                  />
-                  <div class="card-body pt-1">
-                    <h5 class="card-title m-0">
-                      8°
-                      <span class="weather-forecast-temperature-min"> -3°</span>
-                    </h5>
-                    <p class="card-text">SAT</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div class="row" id="forecast"></div>
           </div>
         </div>
         <div class="source">
