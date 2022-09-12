@@ -134,10 +134,10 @@ function showTemperature(response) {
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
-  document.querySelector("#min").innerHTML = `min ${Math.round(
+  document.querySelector("#min").innerHTML = `${Math.round(
     response.data.main.temp_min
   )}°C`;
-  document.querySelector("#max").innerHTML = `max ${Math.round(
+  document.querySelector("#max").innerHTML = `${Math.round(
     response.data.main.temp_max
   )}°C`;
 

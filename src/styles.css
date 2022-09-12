@@ -12,6 +12,7 @@
 .contentundersearch {
   font-family: "Slabo 27px", serif;
 }
+
 .maininfo {
   font-size: 50px;
 }
@@ -19,15 +20,16 @@
   padding-top: 40px;
   padding-left: 10px;
 }
-#iconsleft {
-  padding-top: 70px;
-}
+
 .inforight {
   padding-left: 50px;
 }
 #city {
   font-size: 40px;
   height: 60px;
+}
+#current-city-name {
+  font-size: 40px;
 }
 #nowday {
   font-size: 20px;
@@ -62,7 +64,7 @@
   top: -33px;
 }
 .temperature {
-  font-size: 100px;
+  font-size: 80px;
   margin-top: 0px;
   line-height: 80px;
 }
@@ -91,11 +93,8 @@ li {
 }
 #min {
   margin-bottom: 0;
-  color: blue;
 }
-#max {
-  color: red;
-}
+
 .img-btn {
   background-image: url(../images/loc.png);
   background-repeat: no-repeat;
@@ -111,9 +110,31 @@ li {
   margin: 0%;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (min-width: 540px) {
   .card-temp {
-    /* font-size: 16px; */
     font-size: 1rem;
+  }
+  .maininfo {
+    margin-top: 0px;
+  }
+  #iconsleft {
+    padding-top: 20px;
+  }
+  .warm {
+    padding-top: 0px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .maininfo {
+    margin-top: 20px;
+  }
+  #iconsleft {
+    padding-top: 60px;
+  }
+  .inforight {
+    margin-top: 20px;
+  }
+  .warm {
+    padding-top: 50px;
   }
 }
