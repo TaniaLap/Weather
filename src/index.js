@@ -113,7 +113,7 @@ function displayForecast(response) {
   forecastElement.innerHTML = forecastHTML;
 }
 
-// This fonction get the coordinates
+// This function get the coordinates
 
 function getForecast(coordinates) {
   let apiKey = "c95d60a1e3adbeb286133f1ebebc2579";
@@ -121,7 +121,7 @@ function getForecast(coordinates) {
   axios.get(apiUrl).then(displayForecast);
 }
 
-// This fonction get the API reponse and dispatches it on HTML
+// This function get the API reponse and dispatches it on HTML
 
 function showTemperature(response) {
   document.querySelector("#temperature").innerHTML = Math.round(
