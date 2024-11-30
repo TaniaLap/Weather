@@ -84,39 +84,37 @@ function displayForecast(response) {
   let forecastHTML = `<div class="row row-cols-2 row-cols-lg-6 p-4 pt-0 m-0 g-1 g-md-3">`;
   forecast.forEach(function (forecastDay, index) {
     if (index < 6) {
-      forecastHTML =
-        forecastHTML +
-        `
-<div class="col-2">
-    <div class="card text-center h-100">
-          <img src="${displayImage(forecastDay.weather[0].icon)}"
-            alt=""
-             class="mx-auto d-block mt-4"
-             id="icon"/>
-      <div class="card-body pt-1 p-1 p-sm-2">
-        <h5 class="card-title card-temp m-0>
-          <span class="weather-forecast-temperature-max">${Math.round(
-            forecastDay.temp.max
-          )}°</span>
-          <span class="weather-forecast-temperature-min">${Math.round(
-            forecastDay.temp.min
-          )}°</span>
-         </h5>
-         <p class="card-text">${formatDay(forecastDay.dt)}</p>
-</div>
-    </div>
-      </div>`;
+      forecastHTML += `
+        <div class="col-2">
+          <div class="card text-center h-100">
+            <img src="${displayImage(forecastDay.weather[0].icon)}"
+              alt=""
+              class="mx-auto d-block mt-4"
+              id="icon"/>
+            <div class="card-body pt-1 p-1 p-sm-2">
+              <h5 class="card-title card-temp m-0">
+                <span class="weather-forecast-temperature-max">${Math.round(
+                  forecastDay.temp.max
+                )}°</span>
+                <span class="weather-forecast-temperature-min">${Math.round(
+                  forecastDay.temp.min
+                )}°</span>
+              </h5>
+              <p class="card-text">${formatDay(forecastDay.dt)}</p>
+            </div>
+          </div>
+        </div>`;
     }
   });
 
-  forecastHTML = forecastHTML + `</div>`;
+  forecastHTML += `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
 
 // This function get the coordinates
 
 function getForecast(coordinates) {
-  let apiKey = "c119ffef35b7245a5e03b6e5724ae961";
+  let apiKey = "e3790bfec16258b192d5a2523c9343bb";
   // let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.lat}&lat=${coordinates.lon}&cnt=7&key=${apiKey}&units=metric`;
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayForecast);
@@ -159,7 +157,7 @@ function handleSubmit(event) {
 }
 
 function citySearch(city) {
-  let apiKey = "a7acd530e7eaaf23ad3af01b6ca44155";
+  let apiKey = "e3790bfec16258b192d5a2523c9343bb";
   let units = "metric";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
   axios.get(apiUrl).then(showTemperature);
@@ -170,7 +168,7 @@ function citySearch(city) {
 function showPosition(position) {
   var lat = position.coords.latitude;
   var lon = position.coords.longitude;
-  let apiKey = "a7acd530e7eaaf23ad3af01b6ca44155";
+  let apiKey = "e3790bfec16258b192d5a2523c9343bb";
   let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
   axios.get(url).then(showTemperature);
 }
